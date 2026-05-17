@@ -1,29 +1,13 @@
 package com.example.feedback_portal.entity;
 
-import jakarta.persistence.*;
-
-@Entity
 public class Feedback {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
-
     private String studentName;
-
     private String department;
-
-    private Integer rating;
-
+    private String rating;
     private String message;
 
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
+    public Feedback() {
     }
 
     public String getStudentName() {
@@ -42,11 +26,11 @@ public class Feedback {
         this.department = department;
     }
 
-    public Integer getRating() {
+    public String getRating() {
         return rating;
     }
 
-    public void setRating(Integer rating) {
+    public void setRating(String rating) {
         this.rating = rating;
     }
 

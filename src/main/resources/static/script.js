@@ -47,7 +47,7 @@ async function submitFeedback(event){
 
     try{
 
-        const response = await fetch("/feedback", {
+        const response = await fetch("/submit", {
 
             method:"POST",
 
