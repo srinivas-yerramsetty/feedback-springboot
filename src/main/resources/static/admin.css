@@ -1,0 +1,53 @@
+body{
+    background:#050816;
+    color:white;
+    font-family:Arial;
+    padding:40px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+h1{
+    margin-bottom:30px;
+}
+
+.top-cards{
+    display:flex;
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.card{
+    background:#111827;
+    padding:25px;
+    border-radius:15px;
+    width:250px;
+}
+
+.card h2{
+    font-size:40px;
+}
+
+#feedbackContainer{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.feedback-card{
+    background:#111827;
+    padding:20px;
+    border-radius:15px;
+}
+
+.feedback-card h3{
+    margin-bottom:10px;
+}
+
+.feedback-card p{
+    color:#cbd5e1;
+    margin-top:8px;
+}

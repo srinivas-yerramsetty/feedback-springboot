@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srinivas Feedback Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="background-glow"></div>
+
+<div class="main-container">
+
+    <!-- LEFT SECTION -->
+
+    <div class="left-section">
+
+        <div class="tag">
+            PROFESSIONAL FEEDBACK PORTAL
+        </div>
+
+        <h1>
+            Empowering Students Through
+            <span>Better Learning.</span>
+        </h1>
+
+        <p>
+            Your feedback helps improve classroom experience,
+            teaching quality, practical learning and industry-level preparation.
+        </p>
+
+        <div class="stats-container">
+
+            <div class="stat-card">
+                <h2>250+</h2>
+                <span>Students</span>
+            </div>
+
+            <div class="stat-card">
+                <h2>4.9★</h2>
+                <span>Average Rating</span>
+            </div>
+
+            <div class="stat-card">
+                <h2>100%</h2>
+                <span>Practical Teaching</span>
+            </div>
+
+        </div>
+
+        <!-- ABOUT ME -->
+
+        <div class="about-card">
+
+            <h3>About Me</h3>
+
+            <p>
+                Hello, I’m <strong>Srinivas</strong>,
+                an ex Software Developer currently working in the teaching profession,
+                helping students learn industry-level programming and practical skills.
+            </p>
+
+            <div class="contact-info">
+
+                <span>Email:</span>
+
+                <a href="mailto:yourmail@gmail.com">
+                    srinivasyarramsetti91@gmail.com
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- RIGHT SECTION -->
+
+    <div class="right-section">
+
+        <div class="form-card">
+
+            <div class="form-header">
+                <h2>Submit Feedback</h2>
+                <p>Your opinion matters</p>
+            </div>
+
+            <form onsubmit="submitFeedback(event)">
+
+                <!-- STUDENT NAME -->
+
+                <div class="input-group">
+
+                    <label>Student Name</label>
+
+                    <input
+                            type="text"
+                            id="studentName"
+                            placeholder="Enter your name"
+                            required
+                    >
+
+                </div>
+
+
+                <!-- DEPARTMENT -->
+
+                <div class="input-group">
+
+                    <label>Department / Class</label>
+
+                    <input
+                            type="text"
+                            id="department"
+                            placeholder="B.Sc / BCA / MCA / BTech"
+                            required
+                    >
+
+                </div>
+
+
+                <!-- RATING -->
+
+                <div class="input-group">
+
+                    <label>Rate The Teaching</label>
+
+                    <div class="rating-container">
+
+                        <button type="button" class="rating-btn">1</button>
+
+                        <button type="button" class="rating-btn">2</button>
+
+                        <button type="button" class="rating-btn active">3</button>
+
+                        <button type="button" class="rating-btn">4</button>
+
+                        <button type="button" class="rating-btn">5</button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FEEDBACK -->
+
+                <div class="input-group">
+
+                    <label>Your Feedback</label>
+
+                    <textarea
+                            id="message"
+                            rows="5"
+                            placeholder="Write your experience here..."
+                            required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- SUBMIT BUTTON -->
+
+                <button class="submit-btn">
+                    Submit Feedback
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- SUCCESS POPUP -->
+
+<div class="success-popup" id="successPopup">
+
+    <div class="popup-card">
+
+        <div class="check-icon">✓</div>
+
+        <h2>Feedback Submitted</h2>
+
+        <p>
+            Thank you for your valuable feedback ❤️
+        </p>
+
+        <button onclick="closePopup()">
+            Continue
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
