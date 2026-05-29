@@ -12,7 +12,7 @@ async function loadFeedback(){
 
     data.forEach(feedback => {
 
-        totalRating += feedback.rating;
+        totalRating += Number(feedback.rating);
 
         container.innerHTML += `
 
@@ -31,8 +31,10 @@ async function loadFeedback(){
         `;
     });
 
-
-    const average = (totalRating / data.length).toFixed(1);
+    const average =
+        data.length === 0
+            ? 0
+            : (totalRating / data.length).toFixed(1);
 
     document.getElementById("averageRating").innerText = average;
 }
